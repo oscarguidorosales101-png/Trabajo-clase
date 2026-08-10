@@ -95,6 +95,24 @@ console.log("IVA:", iva);
 console.log("Total:", total);
 
 
+
+
+function restar(a, b) {
+    return a - b;
+}
+
+const restar2 = (a, b) => a - b;
+
+return n * n;
+
+despedirse();
+
+function areaRectangulo(base, altura) {
+    return base * altura;
+}
+
+function esMayorDeEdad(edad) {
+    return edad >= 18;
+}
+
 /* subtotal es 400 seria , iva  52 y total: 452 */
-
-
