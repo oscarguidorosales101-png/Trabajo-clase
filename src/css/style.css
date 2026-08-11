@@ -6,10 +6,17 @@ border: 5px;
 
 #password{
 border-radius: 10px;
+color: blue;
+border: none;
+border-color: blue;
 }
 
 #button{
-color: aquamarine; 
+color: white;
+background-color: black; 
 column-gap: 5px;
+}
 
+#body{
+background-color: aquamarine
 }

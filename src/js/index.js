@@ -10,6 +10,9 @@ const triple = (n) => n * 3;
 console.log(triple(5));
 
 
+
+
+
 function saludar(nombre) {
     console.log("Hola, " + nombre);
 }
@@ -40,10 +43,12 @@ console.log(resultadoCuadrado);
 
 
 function despedirse() {
-    console.log("¡chau!");
+    console.log("¡Chau!");
 }
 
 despedirse();
+
+
 
 
 function areaRectangulo(base, altura) {
@@ -54,12 +59,18 @@ console.log(areaRectangulo(10, 5));
 console.log(areaRectangulo(8, 4));
 
 
+
+
+
 function esMayorDeEdad(edad) {
     return edad >= 18;
 }
 
 console.log(esMayorDeEdad(20));
 console.log(esMayorDeEdad(15));
+
+
+
 
 
 function calcularSubtotal(precios) {
