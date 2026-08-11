@@ -1,0 +1,15 @@
+#email{
+background-color: red;
+color: white;
+border: 5px;
+}
+
+#password{
+border-radius: 10px;
+}
+
+#button{
+color: aquamarine; 
+column-gap: 5px;
+
+}

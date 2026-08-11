@@ -1,52 +1,49 @@
 function esPar(numero) {
-  return numero % 2 === 0;
+    return numero % 2 === 0;
 }
 
-console.log(esPar(9)); /* falso */
-
-
+console.log(esPar(9));
 
 
 const triple = (n) => n * 3;
 
-console.log(triple(5)); /* 15 */
-
-
+console.log(triple(5));
 
 
 function saludar(nombre) {
-  console.log("Hola, " + nombre);
+    console.log("Hola, " + nombre);
 }
+
 let resultado = saludar("Ana");
-console.log(resultado); /* hola, Ana */
-
-
-
+console.log(resultado);
 
 
 function restar(a, b) {
     return a - b;
 }
 
-console.log(restar(10, 4)); // 6
-
-
+console.log(restar(10, 4));
 
 
 const restar2 = (a, b) => a - b;
 
-console.log(restar2(10, 4)); // 6
-
+console.log(restar2(10, 4));
 
 
 function cuadrado(n) {
     return n * n;
 }
 
-let resultado = cuadrado(5);
-console.log(resultado); // 25
+let resultadoCuadrado = cuadrado(5);
+
+console.log(resultadoCuadrado);
 
 
+function despedirse() {
+    console.log("¡chau!");
+}
+
+despedirse();
 
 
 function areaRectangulo(base, altura) {
@@ -54,11 +51,7 @@ function areaRectangulo(base, altura) {
 }
 
 console.log(areaRectangulo(10, 5));
-console.log(areaRectangulo(8, 4));  /* si mal no estoy, daria 52 */
-
-
-
-
+console.log(areaRectangulo(8, 4));
 
 
 function esMayorDeEdad(edad) {
@@ -66,14 +59,17 @@ function esMayorDeEdad(edad) {
 }
 
 console.log(esMayorDeEdad(20));
-console.log(esMayorDeEdad(15)); /* verdadero y ffalso, obvio que el de arriba es V y abajo F. Espero que sea asi  */
-
-
-
+console.log(esMayorDeEdad(15));
 
 
 function calcularSubtotal(precios) {
-    return precios.reduce((suma, precio) => suma + precio, 0);
+    let suma = 0;
+
+    for (let precio of precios) {
+        suma += precio;
+    }
+
+    return suma;
 }
 
 function calcularIVA(subtotal) {
@@ -87,32 +83,13 @@ function calcularTotal(subtotal, iva) {
 let precios = [100, 250, 50];
 
 let subtotal = calcularSubtotal(precios);
+
 let iva = calcularIVA(subtotal);
+
 let total = calcularTotal(subtotal, iva);
 
-console.log("Subtotal:", subtotal);
-console.log("IVA:", iva);
-console.log("Total:", total);
+console.log("subtotal:", subtotal);
+console.log("iva:", iva);
+console.log("total:", total);
 
-
-
-
-function restar(a, b) {
-    return a - b;
-}
-
-const restar2 = (a, b) => a - b;
-
-return n * n;
-
-despedirse();
-
-function areaRectangulo(base, altura) {
-    return base * altura;
-}
-
-function esMayorDeEdad(edad) {
-    return edad >= 18;
-}
-
-/* subtotal es 400 seria , iva  52 y total: 452 */
+/* subtotal es 400, iva 52 y total: 452 */
