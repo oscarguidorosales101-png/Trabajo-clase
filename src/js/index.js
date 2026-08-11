@@ -13,12 +13,18 @@ console.log(triple(5));
 
 
 
+
+
 function saludar(nombre) {
     console.log("Hola, " + nombre);
 }
 
 let resultado = saludar("Ana");
 console.log(resultado);
+
+
+
+
 
 
 function restar(a, b) {
@@ -37,9 +43,9 @@ function cuadrado(n) {
     return n * n;
 }
 
-let resultadoCuadrado = cuadrado(5);
+let resultadoCua = cuadrado(5);
 
-console.log(resultadoCuadrado);
+console.log(resultadoCua);
 
 
 function despedirse() {
@@ -47,6 +53,8 @@ function despedirse() {
 }
 
 despedirse();
+
+
 
 
 
@@ -62,12 +70,17 @@ console.log(areaRectangulo(8, 4));
 
 
 
+
+
 function esMayorDeEdad(edad) {
     return edad >= 18;
 }
 
 console.log(esMayorDeEdad(20));
 console.log(esMayorDeEdad(15));
+
+
+
 
 
 
